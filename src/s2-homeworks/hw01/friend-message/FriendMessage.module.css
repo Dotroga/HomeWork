@@ -20,10 +20,17 @@
     height: 60px;
     background: #F5F7FB;
     box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .friendText:after {
+    content: '';
+    position: relative;
+    left: -13px;
+    bottom: 27.5px;
+    border: 20px solid transparent;
+    border-bottom: 15px solid #F5F7FB;
+    z-index: 0;
 }
 
 .friendName {

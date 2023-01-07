@@ -23,11 +23,17 @@
     height: 60px;
     background: #0066CC;
     box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
-    border-radius: 15px;
+    border-radius: 10px;
     color: #FFFFFF;
 }
 
 .text:after {
+    content: '';
+    position: relative;
+    left: 14px; bottom: 35.5px;
+    border: 30px solid transparent;
+    border-bottom: 20px solid #0066CC;
+    z-index: 0;
 }
 
 .name {
