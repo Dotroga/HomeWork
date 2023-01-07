@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/HomeWork/static/css/main.7583f020.css",
+    "main.js": "/github.io/HomeWork/static/js/main.e8f4e41c.js",
+    "static/js/787.66cb4309.chunk.js": "/github.io/HomeWork/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/github.io/HomeWork/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/github.io/HomeWork/index.html",
+    "main.7583f020.css.map": "/github.io/HomeWork/static/css/main.7583f020.css.map",
+    "main.e8f4e41c.js.map": "/github.io/HomeWork/static/js/main.e8f4e41c.js.map",
+    "787.66cb4309.chunk.js.map": "/github.io/HomeWork/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7583f020.css",
+    "static/js/main.e8f4e41c.js"
+  ]
+}
