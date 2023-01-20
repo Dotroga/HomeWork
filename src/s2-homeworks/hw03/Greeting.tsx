@@ -5,11 +5,11 @@ type GreetingPropsType = {
     name: string
     setNameCallback: ChangeEventHandler<HTMLInputElement>
     addUser: ()=>void
-    onBlur: any // need to fix any
-    onEnter: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
-    lastUserName?: any // need to fix any
+    onBlur: ()=>void
+    onEnter: (e: KeyboardEvent<HTMLInputElement>)=>void
+    error: string
+    totalUsers: number
+    lastUserName?: string
 }
 
 // презентационная компонента (для верстальщика)
@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
+    const inputClass = error ? s.errorInput : s.input// need to fix with (?:)
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -55,7 +55,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     id={'hw3-button'}
                     onClick={addUser}
                     className={s.button}
-                    disabled={!name.trim()}
+                    // disabled={!name.trim()}
                 >
                     add
                 </button>
