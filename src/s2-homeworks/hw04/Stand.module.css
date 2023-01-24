@@ -5,19 +5,24 @@
 }
 
 .inputs {
+    margin: 40px;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    position: relative;
 }
 
 .buttons {
+    width: 180px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    /*align-items: center;*/
 }
 
 .checkboxes {
     display: flex;
     flex-direction: column;
     gap: 36px;
+    margin: 40px;
 }

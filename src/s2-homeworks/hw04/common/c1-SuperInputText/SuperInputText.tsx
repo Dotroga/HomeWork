@@ -6,6 +6,7 @@ import React, {
     ReactNode,
 } from 'react'
 import s from './SuperInputText.module.css'
+import {log} from "util";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
@@ -56,20 +57,24 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
     return (
         <div className={s.inputWrapper}>
-            <input
-                id={id}
-                type={'text'}
-                onChange={onChangeCallback}
-                onKeyPress={onKeyPressCallback}
-                className={finalInputClassName}
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-            />
-            <span
-                id={id ? id + '-span' : undefined}
-                className={finalSpanClassName}
-            >
+           <span
+             id={id ? id + '-span' : undefined}
+             className={finalSpanClassName}
+           >
                 {error}
             </span>
+          <div>
+            <input
+              id={id}
+              type={'text'}
+              onChange={onChangeCallback}
+              onKeyPress={onKeyPressCallback}
+              className={finalInputClassName}
+              {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+            />
+          </div>
+
+
         </div>
     )
 }

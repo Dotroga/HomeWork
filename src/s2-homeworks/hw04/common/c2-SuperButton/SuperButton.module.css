@@ -1,35 +1,89 @@
 .button {
+    height: 30px;
+    width: 132px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px;
 }
 
 .disabled {
+    width: 133px;
+    height: 30px;
+    background: #004D99;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.5;
 }
 
 .secondary {
+    width: 133px;
+    height: 30px;
+    border: 2px solid #004D99;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #004D99;
+    background-color: white;
 }
 
 .default {
+    height: 30px;
+    width: 133px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px;
+    background: #004D99;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .red {
+    width: 129px;
+    height: 30px;
+    background: #CC1439;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .default:hover {
+    width: 167px;
 }
 
 .red:hover {
+    width: 167px;
 }
 
 .secondary:hover {
+    width: 167px;
 }
 
 
 .default:active {
+    background: #0059B3;
+    width: 133px;
 }
 
 .secondary:active {
+    background: #C9E5FF;
 }
 
 .red:active {
+    background: #B31232;
+    width: 129px;
 }
 
 .button:disabled {
