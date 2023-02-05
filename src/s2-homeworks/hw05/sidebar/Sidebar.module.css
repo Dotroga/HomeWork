@@ -1,9 +1,12 @@
 .sidebar {
-
+display: none;
 }
 
 .sidebar.open {
+    display: flex;
     position: absolute;
+    flex-direction: row-reverse;
+    justify-content: end;
     width: 317px;
     height: 100%;
     background: #FFFFFF;
@@ -19,9 +22,11 @@
 .nav {
     display: flex;
     flex-direction: column;
+    margin-right: 70px;
 }
 
 .nav a {
+    margin-top: 45px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -47,13 +52,15 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-
     text-decoration-line: underline;
-
     color: #0059B2;
 }
+
 .close {
+    width: 26px;
+    height: 26px;
 }
 
 .close img {
+
 }

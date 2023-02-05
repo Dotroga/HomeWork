@@ -1,9 +1,13 @@
 .burgerMenuIcon {
+    margin-left: 70px;
+    cursor: pointer;
 }
 
 .header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 60px;
     left: 0px;
     top: 0px;
@@ -13,13 +17,12 @@
 }
 
 .header h1 {
-    margin-left: auto;
+    display: flex;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-
     color: #000000;
-
+    margin-right: 70px;
 }
