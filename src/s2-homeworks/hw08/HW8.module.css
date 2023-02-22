@@ -1,4 +1,5 @@
 .item {
+
 }
 
 .item:last-of-type {
@@ -8,16 +9,33 @@
 }
 
 .buttonsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    padding: 20px;
 }
 
 .container {
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .thead {
+    height: 36px;
+    background: #E5E5E5;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
 }
 
 .nameCol {
+    width: 300px;
+    padding: 2px solid red;
 }
 
 .ageCol {
+
 }
