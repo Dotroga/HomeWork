@@ -1,5 +1,6 @@
 .pagination {
     display: flex;
+    align-items: center;
 }
 
 .text1 {
