@@ -51,6 +51,7 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
+              console.log(res)
                 // делает студент
 
                 // сохранить пришедшие данные
