@@ -11,25 +11,31 @@ export type SuperSortPropsType = {
     id?: string
     sort: string
     value: string
-    onChange: (newSort: string) => void
+    onChange: (value: (sort: string) => string) => void
 }
 
 export const pureChange = (sort: string, down: string, up: string) => {
-    // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    return down // исправить
-}
+  const options = [sort, down, up];
+  let index = 0;
+
+  return (sort: string) => {
+    const option = options[index];
+    index = (index + 1) % options.length;
+    return sort === option ? '' : option;
+  };
+};
 
 const SuperSort: React.FC<SuperSortPropsType> = (
     {
         sort, value, onChange, id = 'hw15',
     }
 ) => {
-  debugger
     const up = '0' + value
     const down = '1' + value
 
     const onChangeCallback = () => {
-        onChange(pureChange(sort, down, up))
+
+      onChange(pureChange(sort, down, up))
     }
 
     const icon = sort === down
